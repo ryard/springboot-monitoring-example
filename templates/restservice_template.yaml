@@ -21,7 +21,7 @@ objects:
     - annotations:
       from:
         kind: DockerImage
-        name: olafmeyer/restservice:v1.0
+        name: robertoyard/restservice:v1.0
       generation: 2
       importPolicy: {}
       name: v1.0
@@ -62,7 +62,7 @@ objects:
           deploymentconfig: ${APP_NAME}
       spec:
         containers:
-        - image: olafmeyer/${APP_NAME}
+        - image: robertoyard/${APP_NAME}
           imagePullPolicy: IfNotPresent
           name: ${APP_NAME}
           readinessProbe:
